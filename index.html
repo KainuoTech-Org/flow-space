@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Space | Yoga & Meditation</title>
+    <meta name="description" content="Breathe into Flow. A minimalist yoga and meditation studio space.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Lenis CSS (Optional but good practice if they have one, usually just minimal styles needed which we add in style.css) -->
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-text">Breathe</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">Flow Space</div>
+        <div class="nav-links">
+            <a href="#philosophy" class="hover-trigger">Philosophy</a>
+            <a href="#classes" class="hover-trigger">Classes</a>
+            <a href="#visit" class="hover-trigger">Visit</a>
+        </div>
+        <button class="nav-cta hover-trigger">Book Now</button>
+        
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle hover-trigger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-links">
+            <a href="#philosophy" class="mobile-link hover-trigger">Philosophy</a>
+            <a href="#classes" class="mobile-link hover-trigger">Classes</a>
+            <a href="#visit" class="mobile-link hover-trigger">Visit</a>
+        </div>
+        <div class="mobile-socials">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="mobile-social-link hover-trigger" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="mobile-social-link hover-trigger" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="mobile-social-link hover-trigger" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-shape"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="line">Breathe</span>
+                    <span class="line">into</span>
+                    <span class="line">Flow</span>
+                </h1>
+                <p class="hero-subtitle">Reconnect with your inner self through movement and stillness.</p>
+                <div class="hero-cta-wrapper">
+                    <button class="btn-primary hover-trigger">Start Your Journey</button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="philosophy" id="philosophy">
+            <div class="container">
+                <div class="philosophy-grid">
+                    <div class="philosophy-text" data-speed="0.9">
+                        <h2 class="section-title">Our Philosophy</h2>
+                        <p class="text-lead">Minimalism is not just an aesthetic. It is a state of mind.</p>
+                        <p>At Flow Space, we strip away the unnecessary to help you find clarity. Our practice focuses on the breath as the bridge between body and mind, creating a sanctuary where you can truly let go.</p>
+                    </div>
+                    <div class="philosophy-image" data-speed="1.1">
+                        <div class="image-wrapper reveal-image">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=2670&auto=format&fit=crop" alt="Yoga Philosophy" class="content-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes Section -->
+        <section class="classes" id="classes">
+            <div class="container">
+                <h2 class="section-title text-center">Curated Classes</h2>
+                <div class="classes-grid">
+                    <!-- Class Card 1 -->
+                    <div class="class-card hover-trigger">
+                        <div class="class-content">
+                            <h3>Hatha Flow</h3>
+                            <p>Gentle movements to align body and breath. Perfect for beginners.</p>
+                            <span class="class-duration">60 min</span>
+                        </div>
+                    </div>
+                    <!-- Class Card 2 -->
+                    <div class="class-card hover-trigger">
+                        <div class="class-content">
+                            <h3>Vinyasa</h3>
+                            <p>Dynamic sequences that build heat and strength. Find your rhythm.</p>
+                            <span class="class-duration">75 min</span>
+                        </div>
+                    </div>
+                    <!-- Class Card 3 -->
+                    <div class="class-card hover-trigger">
+                        <div class="class-content">
+                            <h3>Deep Meditation</h3>
+                            <p>Guided stillness to calm the mind and restore the spirit.</p>
+                            <span class="class-duration">45 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit / Membership Section -->
+        <section class="visit" id="visit">
+            <div class="container">
+                <div class="visit-grid">
+                    <div class="visit-image" data-speed="1.05">
+                        <div class="image-wrapper reveal-image">
+                             <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop" alt="Studio Interior" class="content-img">
+                        </div>
+                    </div>
+                    <div class="visit-content" data-speed="0.95">
+                        <h2 class="section-title">Visit the Studio</h2>
+                        <p>Experience the serenity of our space designed for pure focus and relaxation.</p>
+                        <ul class="features-list">
+                            <li>Natural Light Studio</li>
+                            <li>Premium Mats Provided</li>
+                            <li>Tea Lounge</li>
+                        </ul>
+                        <button class="btn-primary hover-trigger">View Membership</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Flow Space</div>
+                <div class="footer-info">
+                    <p>123 Serenity Lane, Mindful City</p>
+                    <p>hello@flowspace.com</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="hover-trigger" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="hover-trigger" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="hover-trigger" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flow Space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis for Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
