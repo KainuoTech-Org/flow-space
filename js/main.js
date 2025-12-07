@@ -174,17 +174,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Text Animations
     const textSections = document.querySelectorAll('.philosophy-text, .visit-content, .section-title, .classes-grid');
     textSections.forEach(section => {
-        gsap.from(section, {
-            scrollTrigger: {
-                trigger: section,
-                start: "top 85%",
-                toggleActions: "play none none reverse"
+        // Fallback: Ensure opacity is 1 by default via JS, in case ScrollTrigger fails to run
+        section.style.opacity = '1';
+        
+        gsap.fromTo(section, 
+            { 
+                y: 50, 
+                opacity: 0 
             },
-            y: 30,
-            opacity: 0,
-            duration: 1,
-            ease: "power3.out"
-        });
+            {
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 95%", 
+                    toggleActions: "play none none reverse"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1.2,
+                ease: "power3.out",
+                overwrite: "auto" // Prevent conflicts
+            }
+        );
     });
 
 
