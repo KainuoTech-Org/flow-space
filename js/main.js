@@ -177,6 +177,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fallback: Ensure opacity is 1 by default via JS, in case ScrollTrigger fails to run
         section.style.opacity = '1';
         
+        // Temporarily disable ScrollTrigger for text to ensure visibility
+        // Uncomment to re-enable animation once debugged
+        /*
         gsap.fromTo(section, 
             { 
                 y: 50, 
@@ -195,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 overwrite: "auto" // Prevent conflicts
             }
         );
+        */
     });
 
 
